@@ -1,0 +1,59 @@
+<!--pages/home/home.wxml-->
+<!-- Banner -->
+<swiper
+  class="banner"
+  autoplay="true"
+  interval="5000"
+  circular="true"
+>
+  <swiper-item
+    wx:for="{{listBannerTitle}}"
+    wx:key="{{item}}"
+    class="banner_item"
+  >
+    <view class="banner_item_title">
+      {{item}}
+    </view>
+  </swiper-item>
+</swiper>
+
+<!-- Search -->
+<view class="search">
+  <view class="search_input">
+    <i class="iconfont icon_search"></i>
+    请输入小区名、楼盘、商圈
+  </view>
+</view>
+
+<!-- Icon -->
+<view class="icon">
+  <view
+    wx:for="{{listIconData}}"
+    wx:key="{{item}}"
+    class="icon_item"
+  >
+    <view class="icon_item_logo iconfont {{item.logo}}"></view>
+    <text class="icon_item_text">{{item.title}}</text>
+  </view>
+</view>
+
+<!-- Like -->
+<view class="like">
+  <view class="like_title">主推产品</view>
+  <scroll-view
+    class="like_wrap"
+    scroll-x="true"
+  >
+    <view class="like_wrap_item">11111111</view>
+    <view class="like_wrap_item">11111111</view>
+    <view class="like_wrap_item">11111111</view>
+    <view class="like_wrap_item">11111111</view>
+    <view class="like_wrap_item">11111111</view>
+    <view class="like_wrap_item">11111111</view>
+  </scroll-view>
+</view>
+
+<!-- Model -->
+<view class="model">
+  <text>主营商圈</text>
+</view>
