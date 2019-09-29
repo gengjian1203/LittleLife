@@ -6,15 +6,18 @@
   interval="5000"
   circular="true"
 >
-  <swiper-item
+  <block 
     wx:for="{{listBannerTitle}}"
-    wx:key="{{item}}"
-    class="banner_item"
+    wx:key="*this"
   >
-    <view class="banner_item_title">
-      {{item}}
-    </view>
-  </swiper-item>
+    <swiper-item
+      class="banner_item"
+    >
+      <view class="banner_item_title">
+        {{item}}
+      </view>
+    </swiper-item>
+  </block>
 </swiper>
 
 <!-- Search -->
@@ -29,7 +32,7 @@
 <view class="icon">
   <view
     wx:for="{{listIconData}}"
-    wx:key="{{item}}"
+    wx:key="*this"
     class="icon_item"
   >
     <view class="icon_item_logo iconfont {{item.logo}}"></view>
@@ -44,12 +47,14 @@
     class="like_wrap"
     scroll-x="true"
   >
-    <view class="like_wrap_item">11111111</view>
-    <view class="like_wrap_item">11111111</view>
-    <view class="like_wrap_item">11111111</view>
-    <view class="like_wrap_item">11111111</view>
-    <view class="like_wrap_item">11111111</view>
-    <view class="like_wrap_item">11111111</view>
+    <view
+      wx:for="{{listLikeData}}"
+      wx:key="*this"
+      class="like_wrap_item"
+    >
+      <view>{{item.title}}</view>
+      <view>{{item.desc}}</view>
+    </view>
   </scroll-view>
 </view>
 

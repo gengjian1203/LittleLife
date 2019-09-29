@@ -2,7 +2,8 @@
   "pages": [
     "pages/home/home",
     "pages/message/message",
-    "pages/myself/myself"
+    "pages/myself/myself",
+    "pages/demo/demo"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -12,21 +13,28 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/home/home",
-      "text": "主页",
-      "iconPath": "images/icon/icon_home.png",
-      "selectedIconPath": "images/icon/icon_home_actived.png"
-    }, {
-      "pagePath": "pages/message/message",
-      "text": "动态",
-      "iconPath": "images/icon/icon_message.png",
-      "selectedIconPath": "images/icon/icon_message_acitved.png"
-    }, {
-      "pagePath": "pages/myself/myself",
-      "text": "我的",
-      "iconPath": "images/icon/icon_myself.png",
-      "selectedIconPath": "images/icon/icon_myself_actived.png"
-    }]
-  }
+    "color": "#555555",
+    "selectedColor": "#28aa28",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "images/icon/icon_home.png",
+        "selectedIconPath": "images/icon/icon_home_actived.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "动态",
+        "iconPath": "images/icon/icon_message.png",
+        "selectedIconPath": "images/icon/icon_message_acitved.png"
+      },
+      {
+        "pagePath": "pages/myself/myself",
+        "text": "我的",
+        "iconPath": "images/icon/icon_myself.png",
+        "selectedIconPath": "images/icon/icon_myself_actived.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
 }

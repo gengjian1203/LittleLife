@@ -22,6 +22,25 @@ Page({
     }, {
       title: "资讯",
       logo: "icon_news"
+    }],
+    listLikeData: [{
+      title: "1111",
+      desc: "1.1.1.1"
+    }, {
+      title: "22222",
+      desc: "2.2.2.1"
+    }, {
+      title: "3333333",
+      desc: "3.1.1.1"
+    }, {
+      title: "444444",
+      desc: "4.1.1.1"
+    }, {
+      title: "55555",
+      desc: "5.5.1.1"
+    }, {
+      title: "66",
+      desc: "6.1.1.1"
     }]
   },
 
