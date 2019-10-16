@@ -1,2 +1,10 @@
 <!--pages/demo/demo.wxml-->
-<text>pages/demo/demo.wxml</text>
+<view>
+  <banner list="{{arrBannerList}}" msg="AAAAAAAAA"></banner>
+  <button bindtap="onBtnClick">tiptip</button>
+  <list list="{{arrMusicList}}"></list>
+</view>
+
+<view>
+
+</view>

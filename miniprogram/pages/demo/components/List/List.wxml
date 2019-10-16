@@ -1,0 +1,9 @@
+<!--pages/demo/components/List/List.wxml-->
+<text>pages/demo/components/List/List.wxml</text>
+<view class="wrap">
+  <view class="box" wx:for="{{list}}" wx:key="{{item.key}}">
+    <image class="box-img" src="{{item.picUrl}}" mode="aspectFil"></image>
+    <view class="box-name">{{item.name}}</view>
+    <view class="box-desc">{{item.desc}}</view>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+/* pages/demo/components/List/List.wxss */
+.box {
+  float: left;
+  width: 200rpx;
+  height: 300rpx;
+  /* border: 1px solid #000; */
+
+  margin: 20rpx;
+}
+
+.box .box-img {
+  width: 200rpx;
+  height: 200rpx;
+  /* border: 1px solid #000; */
+}
+
+.box .box-name {
+  font-size: 26rpx;
+}
+
+.box .box-desc {
+  font-size: 26rpx;
+}
