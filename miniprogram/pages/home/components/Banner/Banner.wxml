@@ -1,0 +1,8 @@
+<!--pages/home/components/Banner/Banner.wxml-->
+<swiper class="wrap" autoplay="true" interval="5000" circular="true">
+  <block wx:for="{{listImageUrl}}" wx:key="*this">
+    <swiper-item>
+      <image class="content" src="{{item.url}}" mode="scaleToFill" />
+    </swiper-item>
+  </block>
+</swiper>

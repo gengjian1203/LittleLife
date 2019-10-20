@@ -5,11 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    listBannerTitle: [
-      "近在身边的生活服务1", 
-      "近在身边的生活服务2", 
-      "近在身边的生活服务3"
-    ],
+    listImageUrl: [{
+      id: 0,
+      url: "/images/default/banner.jpg"
+    }],
     listIconData: [{
       title: "房源",
       logo: "icon_house"
@@ -48,7 +47,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
   },
 
   /**

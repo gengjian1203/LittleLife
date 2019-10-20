@@ -1,0 +1,31 @@
+/* pages/myself/components/Header/Header.wxss */
+.wrap {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 400rpx;
+  background-color: yellow;
+}
+
+.wrap .icon {
+  overflow: hidden;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  background: red;
+}
+
+.wrap .icon .image {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .text {
+  position: relative;
+  top: 65%;
+  text-align: center;
+}

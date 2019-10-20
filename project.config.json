@@ -34,14 +34,16 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide",
-					"query": ""
+					"name": "demo",
+					"pathName": "pages/demo/demo",
+					"query": "",
+					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "demo",
-					"pathName": "pages/demo/demo",
+					"name": "我的页面",
+					"pathName": "pages/myself/myself",
+					"query": "",
 					"scene": null
 				}
 			]

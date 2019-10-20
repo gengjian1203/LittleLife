@@ -1,10 +1,16 @@
-// components/home/banner/banner.js
+// pages/myself/components/Header/Header.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-
+    objMemberInfo: {
+      type: Object,
+      value: {
+        name: '未登录',
+        appid: '未登录'
+      }
+    }
   },
 
   /**

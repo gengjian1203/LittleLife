@@ -1,6 +1,6 @@
 // pages/demo/demo.js
 import regeneratorRuntime from "../../utils/runtime.js"
-import Say from "../../common/Say.js"
+import Say from "../../utils/Say.js"
 
 const LIMIT_MUSIC = 9
 
@@ -104,7 +104,10 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    console.log("onPullDownRefresh()")
+    console.log("onPullDownRefresh()", this.data.arrMusicList.length)
+    this.data.arrMusicList = []
+    this._getMusicList()
+    wx.stopPullDownRefresh()
   },
 
   /**

@@ -1,25 +1,7 @@
 <!--pages/home/home.wxml-->
 <!-- Banner -->
-<swiper
-  class="banner"
-  autoplay="true"
-  interval="5000"
-  circular="true"
->
-  <block 
-    wx:for="{{listBannerTitle}}"
-    wx:key="*this"
-  >
-    <swiper-item
-      class="banner_item"
-    >
-      <view class="banner_item_title">
-        {{item}}
-      </view>
-    </swiper-item>
-  </block>
-</swiper>
-
+<banner listImageUrl="{{listImageUrl}}">
+</banner>
 <!-- Search -->
 <view class="search">
   <view class="search_input">

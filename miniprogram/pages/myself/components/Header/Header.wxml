@@ -1,0 +1,12 @@
+<!--pages/myself/components/Header/Header.wxml-->
+<view class="wrap">
+  <view class="icon">
+    <image class="image" src="/images/default/banner1.jpg" mode="aspectFill"></image>
+  </view>
+  <view class="text">
+    {{objMemberInfo.name}}
+  </view>
+  <view class="text">
+    {{objMemberInfo.appid}}
+  </view>
+</view>

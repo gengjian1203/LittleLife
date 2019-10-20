@@ -1,0 +1,12 @@
+/* pages/home/components/Banner/Banner.wxss */
+/* Banner 300rpx */
+.wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 300rpx;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}

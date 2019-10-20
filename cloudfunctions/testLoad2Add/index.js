@@ -11,7 +11,7 @@ const dbCollection = db.collection("listPlay")
 const LIMIT_MAX = 100
 
 // 云函数入口函数
-exports.main = async (event, context) => {
+exports.main = async(event, context) => {
   // 获取数据库当前存储信息 
   // 并且突破单次获取数据库的数量限制
   const nDBCount = await dbCollection.count()
@@ -46,7 +46,7 @@ exports.main = async (event, context) => {
     for (let j = 0, len2 = arrDB.data.length; j < len2; j++) {
       if (arrRes[i].id === arrDB.data[j].id) {
         bFlag = false
-        break 
+        break
       }
     }
     if (bFlag) {
@@ -57,7 +57,7 @@ exports.main = async (event, context) => {
   for (let i = 0, len = arrNew.length; i < len; i++) {
     await dbCollection.add({
       data: {
-        ...arrNew[i], 
+        ...arrNew[i],
         createTime: db.serverDate()
       }
     }).then((res) => {
@@ -69,4 +69,3 @@ exports.main = async (event, context) => {
   // 返回新数据的数量
   return arrNew.length
 }
-
