@@ -1,11 +1,29 @@
-// pages/message/message.js
+// miniprogram/pages/messageEditor/messageEditor.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    nTextLength: 0,
+    nTypeIndex: 0,
+    arrType: ['房源', '车源', '招聘', '咨询']
+  },
 
+  HandleTextInput: function(event) {
+    this.setData({
+      nTextLength: event.detail.value.length
+    })
+  },
+
+  HandleTypeChange: function(event) {
+    this.setData({
+      nTypeIndex: event.detail.value
+    })
+  },
+
+  HandleTestClick: function(event) {
+    console.log('HandleTestClick');
   },
 
   /**
@@ -13,7 +31,7 @@ Page({
    */
   onLoad: function (options) {
     wx.setNavigationBarTitle({
-      title: '动态'
+      title: '编辑消息'
     })
   },
 

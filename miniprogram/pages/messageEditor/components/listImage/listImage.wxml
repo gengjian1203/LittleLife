@@ -1,0 +1,10 @@
+<!--pages/messageEditor/listImage/listImage.wxml-->
+<view class="wrap">
+  <view class="content" wx:for="{{arrImageInfo}}" wx:key="*this">
+    <view class="item">
+      <image class="item-image" src="{{item}}" mode="aspectFill"></image>
+      <view class="item-delete iconfont icon_delete" bind:tap="HandleDelImageClick" data-index="{{index}}"></view>
+    </view>
+  </view>
+  <view hidden="{{arrImageInfo.length >= 9}}" class="item-add iconfont icon_add" bind:tap="HandleAddImageClick"></view>
+</view>

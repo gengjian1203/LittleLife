@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "list-image": "../components/listImage/listImage"
+  },
+  "enablePullDownRefresh": false
+}

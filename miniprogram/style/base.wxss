@@ -1,0 +1,19 @@
+.main_color {
+  color: rgb(40, 160, 40);
+}
+
+.main_link {
+  color: rgb(10, 30, 200);
+}
+
+.main_bkcolor {
+  background: #999999;
+}
+
+.main_title {
+  font-size: 36rpx;
+}
+
+.main_desc {
+  font-size: 30rpx;
+}

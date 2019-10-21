@@ -1,0 +1,11 @@
+<!--pages/myself/components/ItemTelephone/ItemTelephone.wxml-->
+<view class="wrap">
+  <view class="content">
+    <view class="title">
+      {{strTitle}}
+    </view>
+    <view class="desc" bind:tap="HandleTelephoneClick">
+      {{strTelephone}}
+    </view>
+  </view>
+</view>

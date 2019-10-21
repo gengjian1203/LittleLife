@@ -1,12 +1,14 @@
 <!--pages/myself/components/Header/Header.wxml-->
 <view class="wrap">
-  <view class="icon">
-    <image class="image" src="/images/default/banner1.jpg" mode="aspectFill"></image>
-  </view>
+  <button class="content" open-type='getUserInfo' bindgetuserinfo="HandleGetUserInfo">
+    <view class="icon">
+      <image class="image" src="{{objMemberInfo.avatarUrl}}" mode="aspectFill"></image>
+    </view>
+  </button>
   <view class="text">
-    {{objMemberInfo.name}}
+    {{objMemberInfo.nickName}}
   </view>
-  <view class="text">
-    {{objMemberInfo.appid}}
-  </view>
+<!--  <view class="text">-->
+<!--    {{objMemberInfo.openID}}-->
+<!--  </view>-->
 </view>

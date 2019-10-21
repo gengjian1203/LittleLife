@@ -1,5 +1,10 @@
 {
   "usingComponents": {
-    "header": "../components/Header/Header"
-  }
+    "header": "../components/Header/Header",
+    "item-description": "../components/ItemDescription/ItemDescription",
+    "item-telephone": "../components/ItemTelephone/ItemTelephone",
+    "item-address": "../components/ItemAddress/ItemAddress",
+    "item-manager": "../components/ItemManager/ItemManager"
+  },
+  "enablePullDownRefresh": false
 }

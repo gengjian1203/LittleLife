@@ -20,6 +20,7 @@ Component({
   methods: {
   },
 
+  // 组件的生命周期
   lifetimes: {
     attached: function() {
       console.log('Banner attached.');

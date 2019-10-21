@@ -3,20 +3,27 @@
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 400rpx;
-  background-color: yellow;
+  height: 300rpx;
+  background-color: #ffffff;
 }
 
-.wrap .icon {
-  overflow: hidden;
+.wrap .content {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 200rpx;
-  height: 200rpx;
+  width: 140rpx;
+  height: 140rpx;
   border-radius: 50%;
-  background: red;
+}
+
+.wrap .content .icon {
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4rpx solid #999999;
 }
 
 .wrap .icon .image {
@@ -26,6 +33,8 @@
 
 .wrap .text {
   position: relative;
-  top: 65%;
+  top: 70%;
+  font-size: 36rpx;
   text-align: center;
+
 }

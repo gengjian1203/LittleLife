@@ -1,0 +1,175 @@
+/* miniprogram/pages/messageEditor/messageEditor.wxss */
+page {
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .content-title {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 80rpx;
+  padding: 0 30rpx;
+  margin-bottom: 20rpx;
+  font-size: 36rpx;
+}
+
+.wrap .content-title::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2rpx;
+  content: '';
+  background: #eee;
+  border-radius: 50%;
+}
+
+.wrap .content-title .title {
+  width: 100%;
+  height: 100%;
+  line-height: 80rpx;
+}
+
+.wrap .content-text {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 300rpx;
+  padding: 0 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.wrap .content-text::before {
+  position: absolute;
+  left: 0;
+  bottom: -10rpx;
+  width: 100%;
+  height: 2rpx;
+  content: '';
+  background: #eee;
+  border-radius: 50%;
+}
+
+.wrap .content-text .text {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  line-height: 30rpx;
+  padding-bottom: 40rpx;
+}
+
+.wrap .content-text .textlength {
+  position: absolute;
+  right: 30rpx;
+  bottom: 0;
+}
+
+.wrap .content-listimage {
+  margin-bottom: 20rpx;
+}
+
+.wrap .content-type {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.wrap .content-type::after {
+  position: absolute;
+  left: 0;
+  bottom: -10rpx;
+  width: 100%;
+  height: 2rpx;
+  content: '';
+  background: #eee;
+  border-radius: 50%;
+}
+
+.wrap .content-type .type {
+  width: 100%;
+}
+
+.wrap .content-position {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 30rpx;
+  margin-bottom: 10rpx;
+  background: #fff;
+}
+
+.wrap .content-position::before {
+  position: absolute;
+  left: 0;
+  bottom: -10rpx;
+  width: 100%;
+  height: 2rpx;
+  content: '';
+  background: #eee;
+  border-radius: 50%;
+}
+
+.wrap .content-address {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 200rpx;
+  line-height: 80rpx;
+  padding: 0 30rpx;
+  margin-bottom: 10rpx;
+  background: #fff;
+}
+
+.wrap .content-address::before {
+  position: absolute;
+  left: 0;
+  bottom: -10rpx;
+  width: 100%;
+  height: 2rpx;
+  content: '';
+  background: #eee;
+  border-radius: 50%;
+}
+
+.wrap .content-telephone {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 30rpx;
+  margin-bottom: 10rpx;
+  background: #fff;
+}
+
+.wrap .content-telephone::before {
+  position: absolute;
+  left: 0;
+  bottom: -10rpx;
+  width: 100%;
+  height: 2rpx;
+  content: '';
+  background: #eee;
+  border-radius: 50%;
+}
+
+.wrap .content-commit {
+  box-sizing: border-box;
+  width: auto;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 60rpx 30rpx;
+  color: #fff;
+  background: rgb(40, 160, 40);
+}

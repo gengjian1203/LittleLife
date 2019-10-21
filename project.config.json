@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -44,6 +44,12 @@
 					"name": "我的页面",
 					"pathName": "pages/myself/myself",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/messageEditor/messageEditor",
+					"pathName": "pages/messageEditor/messageEditor",
 					"scene": null
 				}
 			]

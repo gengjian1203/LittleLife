@@ -1,0 +1,41 @@
+<!--miniprogram/pages/messageEditor/messageEditor.wxml-->
+<view class="wrap">
+  <view class="content-title">
+    <input class="title" placeholder="请输入标题"/>
+  </view>
+  <view class="content-text">
+    <textarea class="text" placeholder="请输入内容" maxlength="1000" bindinput="HandleTextInput"></textarea>
+    <view class="textlength">
+      <span>{{nTextLength}}</span>/1000
+    </view>
+  </view>
+
+  <list-image class="content-listimage"></list-image>
+
+  <view class="content-type">
+    <picker class="type" mode="selector" value="{{nTypeIndex}}" range="{{arrType}}" bindchange="HandleTypeChange">
+      <view>
+        所属类别{{arrType[nTypeIndex]}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="content-position">
+    <view>所在位置</view>
+  </view>
+
+  <view class="content-address">
+    <view>详细地址</view>
+  </view>
+
+  <view class="content-telephone">
+    <view>联系方式</view>
+  </view>
+
+  <button class="content-commit">
+    提交
+  </button>
+
+<!--  <button bind:tap="HandleTestClick">test</button>-->
+
+</view>

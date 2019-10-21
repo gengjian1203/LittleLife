@@ -1,2 +1,6 @@
 <!--pages/myself/myself.wxml-->
 <header></header>
+<item-description></item-description>
+<item-telephone></item-telephone>
+<item-address></item-address>
+<item-manager></item-manager>

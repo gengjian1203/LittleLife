@@ -1,4 +1,5 @@
 /**app.wxss**/
+@import "style/reset.wxss";
 @import "style/iconfont.wxss";
 
 .container {
@@ -6,16 +7,4 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-}
-
-button {
-  background: initial;
-}
-
-button:focus {
-  outline: 0;
-}
-
-button::after {
-  border: none;
 }
