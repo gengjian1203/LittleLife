@@ -74,6 +74,8 @@ page {
 }
 
 .wrap .content-type {
+  display: flex;
+  flex-direction: row;
   position: relative;
   box-sizing: border-box;
   width: 100%;
@@ -94,11 +96,25 @@ page {
   border-radius: 50%;
 }
 
+.wrap .content-type .type-name {
+  flex: 0 0 150rpx;
+}
+
 .wrap .content-type .type {
-  width: 100%;
+  position: relative;
+  flex: 1 1 auto;
+}
+
+.wrap .content-type .type .type-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
 }
 
 .wrap .content-position {
+  display: flex;
+  flex-direction: row;
   position: relative;
   box-sizing: border-box;
   width: 100%;
@@ -120,13 +136,29 @@ page {
   border-radius: 50%;
 }
 
+.wrap .content-position .position-name {
+  flex: 0 0 150rpx;
+}
+
+.wrap .content-position .position {
+  position: relative;
+  flex: 1 1 auto;
+}
+
+.wrap .content-position .position .position-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
 .wrap .content-address {
   position: relative;
   box-sizing: border-box;
   width: 100%;
   height: 200rpx;
   line-height: 80rpx;
-  padding: 0 30rpx;
+  padding: 20rpx 30rpx;
   margin-bottom: 10rpx;
   background: #fff;
 }
@@ -142,7 +174,14 @@ page {
   border-radius: 50%;
 }
 
+.wrap .content-address .address {
+  width: 100%;
+  height: 100%;
+  line-height: 30rpx;
+}
+
 .wrap .content-telephone {
+  display: flex;
   position: relative;
   box-sizing: border-box;
   width: 100%;
@@ -164,12 +203,68 @@ page {
   border-radius: 50%;
 }
 
+.wrap .content-telephone .telephone-name {
+  flex: 0 0 150rpx;
+}
+
+.wrap .content-telephone .telephone {
+  flex: 1 1 auto;
+  height: 100%;
+  line-height: 30rpx;
+}
+
+.wrap .content-money {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 30rpx;
+  margin-bottom: 10rpx;
+  background: #fff;
+}
+
+.wrap .content-money::before {
+  position: absolute;
+  left: 0;
+  bottom: -10rpx;
+  width: 100%;
+  height: 2rpx;
+  content: '';
+  background: #eee;
+  border-radius: 50%;
+}
+
+.wrap .content-money .money-name {
+  flex: 0 0 150rpx;
+}
+
+.wrap .content-money .money {
+  flex: 1 1 auto;
+  height: 100%;
+  line-height: 30rpx;
+}
+
+.wrap .content-money .money-face {
+  flex: 0 0 150rpx;
+  text-align: right;
+}
+
+.wrap .content-money .select-on {
+  color: rgb(40, 160, 40);
+}
+
+.wrap .content-money .select-off {
+  color: #999999;
+}
+
 .wrap .content-commit {
   box-sizing: border-box;
   width: auto;
   height: 80rpx;
   line-height: 80rpx;
-  margin: 60rpx 30rpx;
+  margin: 80rpx 30rpx;
   color: #fff;
   background: rgb(40, 160, 40);
 }

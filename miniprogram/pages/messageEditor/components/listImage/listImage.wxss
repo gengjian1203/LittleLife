@@ -43,11 +43,11 @@
   height: 220rpx;
   margin-right: 10rpx;
   margin-bottom: 10rpx;
-  font-size: 100rpx;
+  font-size: 60rpx;
   color: #999999;
   line-height: 220rpx;
   text-align: center;
   background-color: #fff;
   border-radius: 10rpx;
-  border: 1rpx solid #eee;
+  border: 2rpx dashed #ccc;
 }

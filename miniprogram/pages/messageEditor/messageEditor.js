@@ -7,23 +7,28 @@ Page({
   data: {
     nTextLength: 0,
     nTypeIndex: 0,
-    arrType: ['房源', '车源', '招聘', '咨询']
+    arrType: ['房源', '车源', '招聘', '咨询'],
+    strPosition: '无地址信息',
+    bMoneySelectFace: false
   },
 
   HandleTextInput: function(event) {
     this.setData({
       nTextLength: event.detail.value.length
-    })
+    });
   },
 
   HandleTypeChange: function(event) {
     this.setData({
       nTypeIndex: event.detail.value
-    })
+    });
   },
 
-  HandleTestClick: function(event) {
-    console.log('HandleTestClick');
+  HandleMoneyFaceClick: function(event) {
+    this.setData({
+      bMoneySelectFace: !this.data.bMoneySelectFace
+    });
+    console.log('select money face.11111111', this.data.bMoneySelectFace);
   },
 
   /**

@@ -1,8 +1,11 @@
 <!--miniprogram/pages/messageEditor/messageEditor.wxml-->
 <view class="wrap">
+  <!-- 大标题 -->
   <view class="content-title">
     <input class="title" placeholder="请输入标题"/>
   </view>
+
+  <!-- 动态内容 -->
   <view class="content-text">
     <textarea class="text" placeholder="请输入内容" maxlength="1000" bindinput="HandleTextInput"></textarea>
     <view class="textlength">
@@ -10,28 +13,56 @@
     </view>
   </view>
 
+  <!-- 图片组 -->
   <list-image class="content-listimage"></list-image>
 
+  <!-- 类别选择 -->
   <view class="content-type">
+    <view class="type-name">
+      所属类别
+    </view>
     <picker class="type" mode="selector" value="{{nTypeIndex}}" range="{{arrType}}" bindchange="HandleTypeChange">
       <view>
-        所属类别{{arrType[nTypeIndex]}}
+        {{arrType[nTypeIndex]}}
       </view>
+      <view class="type-icon iconfont icon_enter"></view>
     </picker>
   </view>
 
+  <!-- 位置选择 -->
   <view class="content-position">
-    <view>所在位置</view>
+    <view class="position-name">
+      所在位置
+    </view>
+    <view class="position">
+      <view>
+        {{strPosition}}
+      </view>
+      <view class="position-icon iconfont icon_position"></view>
+    </view>
   </view>
 
+  <!-- 地址选择 -->
   <view class="content-address">
-    <view>详细地址</view>
+    <textarea class="address" placeholder="请输入详细地址" maxlength="1000"></textarea>
   </view>
 
+  <!-- 联系方式 -->
   <view class="content-telephone">
-    <view>联系方式</view>
+    <view class="telephone-name">联系方式</view>
+    <input class="telephone" placeholder="请输入联系方式"/>
   </view>
 
+  <!-- 金额 -->
+  <view class="content-money">
+    <view class="money-name">具体金额</view>
+    <input class="money" placeholder="如无金额可不填写"/>
+    <view class="money-face">
+      <span class="iconfont icon_select {{bMoneySelectFace? 'select-on' : 'select-off'}}" bind:tap="HandleMoneyFaceClick"></span> 面议
+    </view>
+  </view>
+
+  <!-- 提交按钮 -->
   <button class="content-commit">
     提交
   </button>
