@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: flex-start;
-  padding: 0 30rpx;
+  padding: 20rpx 30rpx;
 }
 
 .wrap .item {

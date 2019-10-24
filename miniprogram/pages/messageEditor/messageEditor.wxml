@@ -2,7 +2,7 @@
 <view class="wrap">
   <!-- 大标题 -->
   <view class="content-title">
-    <input class="title" placeholder="请输入标题"/>
+    <input type="text" class="title" placeholder="请输入标题" bindinput="HandleTitleInput"/>
   </view>
 
   <!-- 动态内容 -->
@@ -14,7 +14,7 @@
   </view>
 
   <!-- 图片组 -->
-  <list-image class="content-listimage"></list-image>
+  <list-image class="content-listimage" bind:getImagePath="getImagePath"></list-image>
 
   <!-- 类别选择 -->
   <view class="content-type">
@@ -44,26 +44,26 @@
 
   <!-- 地址选择 -->
   <view class="content-address">
-    <textarea class="address" placeholder="请输入详细地址" maxlength="1000"></textarea>
+    <textarea class="address" placeholder="请输入详细地址" maxlength="1000" bindinput="HandleAddressInput"></textarea>
   </view>
 
   <!-- 联系方式 -->
   <view class="content-telephone">
     <view class="telephone-name">联系方式</view>
-    <input class="telephone" placeholder="请输入联系方式"/>
+    <input type="number" class="telephone" placeholder="请输入联系方式，如：133XXXXXXXX" bindinput="HandleTelephoneInput"/>
   </view>
 
   <!-- 金额 -->
   <view class="content-money">
     <view class="money-name">具体金额</view>
-    <input class="money" placeholder="如无金额可不填写"/>
+    <input type="number" class="money" disabled="{{bMoneySelectFace}}" placeholder="如无金额可不填写" value="{{strMoney}}" bindinput="HandleMoneyInput"/>
     <view class="money-face">
       <span class="iconfont icon_select {{bMoneySelectFace? 'select-on' : 'select-off'}}" bind:tap="HandleMoneyFaceClick"></span> 面议
     </view>
   </view>
 
   <!-- 提交按钮 -->
-  <button class="content-commit">
+  <button class="content-commit" bind:tap="HandleCommitClick">
     提交
   </button>
 

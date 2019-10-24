@@ -2,5 +2,6 @@
   "usingComponents": {
     "list-image": "../components/listImage/listImage"
   },
+  "navigationBarTitleText": "编辑动态",
   "enablePullDownRefresh": false
 }

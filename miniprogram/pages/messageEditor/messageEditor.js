@@ -5,17 +5,37 @@ Page({
    * 页面的初始数据
    */
   data: {
+    strTitle: '',
+    strText: '',
     nTextLength: 0,
+    arrImageInfo: [],
     nTypeIndex: 0,
     arrType: ['房源', '车源', '招聘', '咨询'],
     strPosition: '无地址信息',
+    strAddress: '',
+    strTelephone: '',
+    strMoney: '',
     bMoneySelectFace: false
+  },
+
+  HandleTitleInput: function(event) {
+    this.setData({
+      strTitle: event.detail.value
+    });
   },
 
   HandleTextInput: function(event) {
     this.setData({
+      strText: event.detail.value,
       nTextLength: event.detail.value.length
     });
+  },
+
+  getImagePath: function(event) {
+    console.log(event);
+    this.setData({
+      arrImageInfo: event.detail
+    })
   },
 
   HandleTypeChange: function(event) {
@@ -24,20 +44,50 @@ Page({
     });
   },
 
+  HandleAddressInput: function(event) {
+    this.setData({
+      strAddress: event.detail.value
+    })
+  },
+
+  HandleTelephoneInput: function(event) {
+    this.setData({
+      strTelephone: event.detail.value
+    })
+  },
+
+  HandleMoneyInput: function(event) {
+    this.setData({
+      strMoney: event.detail.value
+    })
+  },
+
   HandleMoneyFaceClick: function(event) {
     this.setData({
+      strMoney: this.data.bMoneySelectFace ? '' : '面议',
       bMoneySelectFace: !this.data.bMoneySelectFace
     });
-    console.log('select money face.11111111', this.data.bMoneySelectFace);
+  },
+
+  HandleCommitClick: function(event) {
+    console.log(this.data.strTitle)
+    console.log(this.data.strText)
+    console.log(this.data.nTextLength)
+    console.log(this.data.arrImageInfo)
+    console.log(this.data.nTypeIndex)
+    console.log(this.data.arrType[this.data.nTypeIndex])
+    console.log(this.data.strPosition)
+    console.log(this.data.strAddress)
+    console.log(this.data.strTelephone)
+    console.log(this.data.strMoney)
+    console.log(this.data.bMoneySelectFace)
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setNavigationBarTitle({
-      title: '编辑消息'
-    })
+
   },
 
   /**

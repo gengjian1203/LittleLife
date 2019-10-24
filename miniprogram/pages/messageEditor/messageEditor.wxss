@@ -85,6 +85,17 @@ page {
   margin-bottom: 20rpx;
 }
 
+.wrap .content-type::before {
+  position: absolute;
+  left: 0;
+  top: -10rpx;
+  width: 100%;
+  height: 2rpx;
+  content: '';
+  background: #eee;
+  border-radius: 50%;
+}
+
 .wrap .content-type::after {
   position: absolute;
   left: 0;

@@ -23,20 +23,20 @@ Component({
    */
   methods: {
     // 添加图片
-    HandleAddImageClick: function () {
-      const _this = this;
+    HandleAddImageClick: function (event) {
       wx.chooseImage({
-        count: 9 - _this.data.arrImageInfo.length,
+        count: 9 - this.data.arrImageInfo.length,
         sizeType: ['original', 'compressed'],
         sourceType: ['album', 'camera'],
-        success(res) {
+        success: (res) => {
           console.log(res)
-          _this.setData({
-            arrImageInfo: _this.data.arrImageInfo.concat(res.tempFilePaths)
+          this.setData({
+            arrImageInfo: this.data.arrImageInfo.concat(res.tempFilePaths)
           });
-
+          // 将结果传给父组件
+          this.triggerEvent('getImagePath', this.data.arrImageInfo);
         },
-        fail(err) {
+        fail: (err) => {
           console.log(err);
         }
       })
@@ -44,10 +44,12 @@ Component({
     // 删除指定图片
     HandleDelImageClick: function (event) {
       const nIndex = event.target.dataset.index;
-      this.data.arrImageInfo.splice(nIndex, 1)
+      this.data.arrImageInfo.splice(nIndex, 1);
       this.setData({
         arrImageInfo: this.data.arrImageInfo
-      })
+      });
+      // 将结果传给父组件
+      this.triggerEvent('getImagePath', this.data.arrImageInfo);
     }
   }
 })
