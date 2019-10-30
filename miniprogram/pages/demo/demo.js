@@ -1,6 +1,7 @@
 // pages/demo/demo.js
 import regeneratorRuntime from "../../utils/runtime.js"
 import Say from "../../utils/Say.js"
+import Common from "../../utils/Common.js"
 
 const LIMIT_MUSIC = 9
 
@@ -30,6 +31,8 @@ Page({
     // this.foo()
     console.log("onLoad()")
     this._getMusicList()
+
+    Common.Test();
   },
 
   _getMusicList() {

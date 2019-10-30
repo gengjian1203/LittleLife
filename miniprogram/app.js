@@ -14,15 +14,17 @@ App({
       })
     }
 
-    this.globalData = {}
+    this.globalData = {
+      // regeneratorRuntime: require('utils/runtime.js')
+    }
 
     // 对log重新封装
-    console.log = ((oriLogFunc) => {
-      return (str) => {
-        if (bShowLog) {// 需要打印 此处改为 true
-          oriLogFunc.call(console, str);
-        }
-      }
-    })(console.log);
+    // console.log = ((oriLogFunc) => {
+    //   return (str) => {
+    //     if (bShowLog) {// 需要打印 此处改为 true
+    //       oriLogFunc.call(console, str);
+    //     }
+    //   }
+    // })(console.log);
   }
 })
