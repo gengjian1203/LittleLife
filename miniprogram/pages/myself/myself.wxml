@@ -1,6 +1,17 @@
 <!--pages/myself/myself.wxml-->
-<header></header>
-<item-description></item-description>
-<item-telephone></item-telephone>
-<item-address></item-address>
-<item-manager></item-manager>
+<!-- 登录头像 -->
+<view class="content-header">
+  头部登录
+</view>
+
+<!-- 产品介绍 -->
+<com-list-item list="{{listOptionsDesc}}"></com-list-item>
+
+<!-- 联系方式 -->
+<com-list-item list="{{listOptionsTelephone}}"></com-list-item>
+
+<!-- 附近门店 -->
+<com-list-item list="{{listOptionsPosition}}"></com-list-item>
+
+<!-- 员工登录 -->
+<com-list-item list="{{listOptionsAdmin}}"></com-list-item>

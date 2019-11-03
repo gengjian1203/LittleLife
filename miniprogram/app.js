@@ -1,6 +1,3 @@
-// 是否打印log
-const bShowLog = true;
-
 //app.js
 App({
   onLaunch: function() {
@@ -15,13 +12,13 @@ App({
     }
 
     this.globalData = {
-      // regeneratorRuntime: require('utils/runtime.js')
+      // 存放全局数据
     }
 
     // 对log重新封装
     // console.log = ((oriLogFunc) => {
     //   return (str) => {
-    //     if (bShowLog) {// 需要打印 此处改为 true
+    //     if (false) {
     //       oriLogFunc.call(console, str);
     //     }
     //   }

@@ -1,19 +1,31 @@
-.main_color {
-  color: rgb(40, 160, 40);
-}
+page {
+  /* 颜色 */
+  /* 主色调 */
+  --clr-main: rgb(40, 160, 40);
+  /* 链接色调 */
+  --clr-link: #49e;
+  /* 背景颜色 */
+  --clr-back: #eee;
+  /* 选项卡背景颜色 */
+  --clr-list: #fff;
+  /* 文字颜色 */
+  --clr-text: #222;
+  /* 勾勒颜色 */
+  --clr-pen: #999;
 
-.main_link {
-  color: rgb(10, 30, 200);
-}
+  /* 字号 */
+  /* 标题字号 */
+  --ft-title: 36rpx;
+  /* 正文字号 */
+  --ft-desc: 32rpx;
 
-.main_bkcolor {
-  background: #999999;
-}
-
-.main_title {
-  font-size: 36rpx;
-}
-
-.main_desc {
-  font-size: 30rpx;
+  /* 尺寸 */
+  /* 左右空白 */
+  --space-lr: 30rpx;
+  /* 下方空白 */
+  --space-btm: 20rpx;
+  /* 标题栏高度 */
+  --h-title: 80rpx;
+  /* 项目高度 */
+  --h-item: 80rpx;
 }

@@ -1,0 +1,68 @@
+/* components/ComListItem/ComListItem.wxss */
+.content-list {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 0 var(--space-lr) var(--space-btm) var(--space-lr);
+  margin-bottom: var(--space-btm);
+  background-color: var(--clr-list);
+}
+
+.content-list .content-list-title {
+  width: 100%;
+  height: var(--h-title);
+  line-height: var(--h-title);
+  font-size: var(--ft-title);
+  font-weight: bold;
+  color: var(--clr-text);
+}
+
+.content-list .content-list-desc {
+  width: 100%;
+  height: auto;
+  font-size: var(--ft-desc);
+  color: var(--clr-text);
+  text-align: justify;
+}
+
+.content-list .content-list-item {
+  position: relative;
+  width: 100%;
+  height: var(--h-item);
+  line-height: var(--h-item);
+  font-size: var(--ft-desc);
+  color: var(--clr-text);
+}
+
+.content-list .content-list-item .content-list-item-icon {
+  float: left;
+  z-index: 101;
+  margin-right: 10rpx;
+}
+
+.content-list .content-list-item .content-list-item-left {
+  float: left;
+  z-index: 101;
+}
+
+.content-list .content-list-item .content-list-item-right {
+  float: right;
+  overflow: hidden;
+  width: 65%;
+  z-index: 101;
+  margin-right: 40rpx;
+  text-align: right;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--clr-link);
+}
+
+.content-list .content-list-item .content-list-item-enter {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: right;
+}

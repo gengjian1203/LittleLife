@@ -1,8 +1,0 @@
-<!--pages/myself/components/ItemManager/ItemManager.wxml-->
-<view class="wrap">
-  <view class="content">
-    <view class="text" bind:tap="HandleManagerClick">
-      {{strText}}
-    </view>
-  </view>
-</view>

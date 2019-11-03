@@ -1,0 +1,14 @@
+<!--components/ComListItem/ComListItem.wxml-->
+<view class="content-list">
+  <!-- 标题 -->
+  <view wx:if="{{list.title}}" class="content-list-title">{{list.title}}</view>
+  <!-- 介绍 -->
+  <view wx:if="{{list.desc}}" class="content-list-desc">{{list.desc}}</view>
+  <!-- 列表项 -->
+  <view wx:for="{{list.data}}" wx:key="{{index}}" class="content-list-item" >
+    <view wx:if="{{item.icon}}" class="content-list-item-icon iconfont {{item.icon}}}"></view>
+    <view wx:if="{{item.left}}" class="content-list-item-left">{{item.left}}</view>
+    <view wx:if="{{item.right}}" class="content-list-item-right">{{item.right}}</view>
+    <view wx:if="{{item.fun}}" class="content-list-item-enter iconfont icon-enter" bindtap="{{item.fun}}" data-param="{{item}}"></view>
+  </view>
+</view>
