@@ -1,2 +1,9 @@
 <!--pages/message/message.wxml-->
 <text>pages/message/message.wxml</text>
+<button class="content-commit" bind:tap="HandlePullMessageClick">
+  拉取授权
+</button>
+
+<button class="content-commit" bind:tap="HandleSendMessageClick">
+  模拟后台发送消息
+</button>
