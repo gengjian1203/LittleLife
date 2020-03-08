@@ -8,11 +8,12 @@
 		"minified": true,
 		"newFeature": true
 	},
-	"appid": "wx821aadcd431646f9",
+	"appid": "wx1cac8cd76fcd3044",
 	"projectname": "LittleLife",
-	"libVersion": "2.2.5",
+	"libVersion": "2.10.2",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
 	"condition": {
 		"search": {
 			"current": -1,

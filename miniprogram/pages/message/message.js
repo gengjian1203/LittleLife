@@ -72,7 +72,7 @@ Page({
     })
   },
 
-  //
+  // 拉取授权
   HandlePullMessageClick: function () {
     console.log('HandlePullMessageClick')
 
@@ -82,7 +82,6 @@ Page({
     // 'EOPI-7qoDKeCyK6NxR7y_NB0wZL7ZvsI5FvDd-xtdXA',
     // 'dwThvkscVUnpdgLdnAbm_pcyDhGRTtnGf41B4W8gH5c'
     const strMsgId = 'v7s56Vb1U_GJWeCMxoDi7RWKiXQM37TTV4gVJAYU19E';
-
 
     wx.requestSubscribeMessage({
       // 申请的订阅模板id
@@ -127,10 +126,9 @@ Page({
     })
   },
 
+  // 云函数模拟后台发送消息
   HandleSendMessageClick: function () {
     console.log('HandleSendMessageClick')
-
-
     wx.login({
       //获取code
       success: function (res) {
@@ -160,10 +158,31 @@ Page({
         })
       }
     })
+  },
 
+  // 测试云函数的调用
+  HandleTestCloudFunction: function () {
+    console.log('HandleGotoLivePlayerPage');
+    wx.cloud.callFunction({
+      name: 'getSessionInfo',
+      data: {
+      }
+    }).then((res) => {
+      console.log(res)
+    })
+  },
 
-
-  }
+  // 跳转到直播页面
+  HandleGotoLivePlayerPage: function () {
+    console.log('HandleGotoLivePlayerPage');
+    wx.cloud.callFunction({
+      name: 'getLiveInfo',
+      data: {
+      }
+    }).then((res) => {
+      console.log('HandleGotoLivePlayerPage', res);
+    })
+  },
 
 
 })

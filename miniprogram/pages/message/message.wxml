@@ -1,9 +1,18 @@
 <!--pages/message/message.wxml-->
 <text>pages/message/message.wxml</text>
+
 <button class="content-commit" bind:tap="HandlePullMessageClick">
   拉取授权
 </button>
 
 <button class="content-commit" bind:tap="HandleSendMessageClick">
   模拟后台发送消息
+</button>
+
+<button class="content-commit" bind:tap="HandleTestCloudFunction">
+  测试云函数的调用
+</button>
+
+<button class="content-commit" bind:tap="HandleGotoLivePlayerPage">
+  跳转到直播页面
 </button>

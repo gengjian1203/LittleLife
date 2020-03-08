@@ -6,11 +6,17 @@
     "pages/demo/demo",
     "pages/messageEditor/messageEditor"
   ],
+  "plugins": {
+    "live-player-plugin": {
+      "version": "1.0.2",
+      "provider": "wx2b03c6e691cd7370"
+    }
+  },
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "永吉小生活",
+    "navigationBarTitleText": "酝酿小生活",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   },
